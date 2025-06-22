@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gKeepDC</title>
+    <link rel="icon" type="image/x-icon" href="./public/favicon.png" /><!-- <a href="https://www.flaticon.com/free-icons/convert" title="convert icons">Convert icons created by Komar Dews - Flaticon</a> -->
+</head>
+<body>
+    <h1>gKeepDC</h1>
+    <h2>Google Keep Data Converter</h1>
+    <h3>Convert your Google Keep JSON files to MD files that can be used by Logseq.</h2>
+    <!-- create instructions for the process here -->
+    <!--add a 'show instructions' button here-->
+    <ol>
+        <li>Go to <a href="https://takeout.google.com/">Google Takeout</a> and sign into your google account if not signed in already.</li>
+        <li>Click on the "Deselect All" in the top right-hand corner of the "Select data to include" section, scroll down to Keep and check the box. Click the "Next step" button.</li>
+        <li>Click the "Create export" button in the "Choose file type, frequency & destination" section.</li>
+        <li>You should receive an email containing your download link (if not, repeat steps 2-3). Use the links contained in the email to download your zip files.</li>
+        <li>Once the download(s) complete, click the "Choose File" button below and select the zip file(s) you just downloaded, then click "Open".</li>
+        <li>Once all of the zip files have been successfully chosen, click the process button to download your converted files.</li>
+    </ol>
+
+    <form id="fileForm">
+        <input type="file" multiple name="zipFile" placeholder="Google Keep Takeout Location" required />
+        <!-- insert conversion options here -->
+         <button type="submit" method=POST>Process</button>
+    </form>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
