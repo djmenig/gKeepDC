@@ -1,2 +1,31 @@
-.parcel-cache
-node_modules
+# Node.js dependencies
+node_modules/
+.npm/
+
+# Parcel build output
+dist/
+.parcel-cache/
+.parcel-resolver-cache/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store # macOS
+.env # Environment variables (if you start using them)
+.env.* # More general env files
+.vscode/ # VS Code specific settings (optional, sometimes useful to share)
+*.sublime-project # Sublime Text
+*.sublime-workspace # Sublime Text
+.idea/ # IntelliJ/WebStorm
+
+# Editor backup files
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
