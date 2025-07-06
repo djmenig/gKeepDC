@@ -4,7 +4,7 @@
   "description": "A webapp to convert Google Keep JSON files to MD files--ready for use in Logseq.",
   "homepage": "https://djmenig.github.io/gKeepDC/",
   "scripts": {
-    "start": "index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
