@@ -24,5 +24,7 @@ jobs:
         run: npm install
 
       - name: Build and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run deploy
