@@ -2,7 +2,6 @@
 const form = document.getElementById("fileForm");
 
 form.addEventListener("submit", async (event) => {
-  console.log("Form submit event triggered!");
   event.preventDefault(); // Prevent the default form submission
 
   const fileInput = document.querySelector('input[type="file"]');
